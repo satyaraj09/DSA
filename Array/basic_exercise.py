@@ -61,3 +61,4 @@ for i in range(len(right_shift)-2, -1, -1):
 right_shift[0] = 0  # fill the first spot with 0
 print("Array after right shift:")
 print(right_shift)
+# hello 
