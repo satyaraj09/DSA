@@ -61,4 +61,16 @@ for i in range(len(right_shift)-2, -1, -1):
 right_shift[0] = 0  # fill the first spot with 0
 print("Array after right shift:")
 print(right_shift)
-# hello 
+
+
+# ==================
+# Reversing the array (two-pointer, in-place)
+# ==================
+array_two = array[:]  # copy
+left = 0
+right = len(array_two) - 1
+
+while left < right:
+    array_two[left], array_two[right] = array_two[right], array_two[left]
+    left += 1
+    right -= 1
